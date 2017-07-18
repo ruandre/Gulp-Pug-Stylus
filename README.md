@@ -1,2 +1,1 @@
-# gulp-pug-styl
-Gulp Pug Styl
+# Gulp Pug Styl
