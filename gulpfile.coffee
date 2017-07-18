@@ -5,15 +5,15 @@ path = require 'path'
 join = path.join
 
 # config
-srcDir   = join __dirname, 'src'
-destDir  = join __dirname, 'dist'
-jsSrc    = join srcDir, 'js', 'bundle.js'
-cssSrc   = join srcDir, 'styl', '*.styl'
-cssDest  = join destDir, 'css'
-pugDir   = join srcDir, 'pug'
-pugSrc   = join pugDir, '**', '*.pug'
-pugExcl  = '!' + join pugDir, 'lib', '**'
-htmlSrc  = [pugSrc, pugExcl]
+srcDir  = join __dirname, 'src'
+destDir = join __dirname, 'dist'
+jsSrc   = join srcDir, 'js', 'bundle.js'
+cssSrc  = join srcDir, 'styl', '*.styl'
+cssDest = join destDir, 'css'
+pugDir  = join srcDir, 'pug'
+pugSrc  = join pugDir, '**', '*.pug'
+pugExcl = '!' + join pugDir, 'lib', '**'
+htmlSrc = [pugSrc, pugExcl]
 
 # date for cache-busting
 moment  = require 'moment' # https://momentjs.com
@@ -82,11 +82,6 @@ gulp.task 'html', () ->
 
 # run tasks in order
 # and in parallel (arrays)
-gulp.task 'default', gulp.series(
-  'clean', # optional, comment to disable
-  ['js', 'css', 'html'],
-)
-
 gulp.task 'default', gulp.series(
   'clean', # optional, comment to disable
   ['js', 'css', 'html'],
