@@ -31,7 +31,7 @@ plumberErr = (err) ->
 # clean
 # https://github.com/sindresorhus/del
 del = require 'del'
-gulp.task 'clean', () ->
+gulp.task 'clean', ->
   return del ['dist']
 
 # js
@@ -41,7 +41,7 @@ gulp.task 'clean', () ->
 resolveDeps = require 'gulp-resolve-dependencies'
 concat      = require 'gulp-concat'
 uglify      = require 'gulp-uglify'
-gulp.task 'js', () ->
+gulp.task 'js', ->
   return gulp.src jsSrc
     .pipe plumber errorHandler: plumberErr
     .pipe resolveDeps()
@@ -58,7 +58,7 @@ styl       = require 'gulp-stylus'
 autoPrefix = require 'gulp-autoprefixer'
 cleanCss   = require 'gulp-clean-css'
 rename     = require 'gulp-rename'
-gulp.task 'css', () ->
+gulp.task 'css', ->
   return gulp.src cssSrc
     .pipe plumber errorHandler: plumberErr
     .pipe styl()
@@ -73,7 +73,7 @@ gulp.task 'css', () ->
 # https://github.com/pugjs/gulp-pug
 pug  = require 'gulp-pug'
 data = require 'gulp-data'
-gulp.task 'html', () ->
+gulp.task 'html', ->
   return gulp.src htmlSrc
     .pipe plumber errorHandler: plumberErr
     .pipe data((file) -> { cacheBust: theDate })
