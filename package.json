@@ -1,0 +1,36 @@
+{
+  "name": "gulp-pug-styl",
+  "version": "1.0.0",
+  "description": "Gulp Pug Styl",
+  "main": "gulpfile.coffee",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ruandre/gulp-pug-styl.git"
+  },
+  "author": "Ruandre Janse Van Rensburg",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ruandre/gulp-pug-styl/issues"
+  },
+  "homepage": "https://github.com/ruandre/gulp-pug-styl#readme",
+  "devDependencies": {
+    "coffee-script": "^1.12.7",
+    "del": "^3.0.0",
+    "gulp": "github:gulpjs/gulp#4.0",
+    "gulp-autoprefixer": "^4.0.0",
+    "gulp-clean-css": "^3.7.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-data": "^1.2.1",
+    "gulp-plumber": "^1.1.0",
+    "gulp-pug": "^3.3.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-resolve-dependencies": "^2.2.0",
+    "gulp-stylus": "^2.6.0",
+    "gulp-uglify": "^3.0.0",
+    "gulp-util": "^3.0.8",
+    "moment": "^2.18.1"
+  }
+}

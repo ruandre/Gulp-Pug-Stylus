@@ -1,0 +1,15 @@
+@require 'lib/helpers'
+@require 'lib/foundation'
+
+body
+  padding 1em
+
+// mobile-first responsive styles
+@media (min-width 48em)
+  body
+    padding 0
+
+// better font size for tiny screens
+@media (max-width 18.75em)
+  html
+    font-size 5.5vw
