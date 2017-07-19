@@ -1,0 +1,21 @@
+{
+  "name": "gulp-pug-styl",
+  "description": "Gulp Pug Styl",
+  "main": "gulpfile.coffee",
+  "authors": [
+    "Ruandre Janse Van Rensburg"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/ruandre/gulp-pug-styl",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "zepto": "^1.2.0"
+  }
+}
