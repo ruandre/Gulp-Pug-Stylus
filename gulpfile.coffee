@@ -45,7 +45,7 @@ gulp.task 'js', ->
   return gulp.src jsSrc
     .pipe plumber errorHandler: plumberErr
     .pipe resolveDeps()
-    .pipe concat 'bundle.' + theDate + '.js'
+    .pipe concat "bundle.min.#{theDate}.js"
     .pipe uglify()
     .pipe gulp.dest destDir
 
@@ -65,7 +65,7 @@ gulp.task 'css', ->
     .pipe autoPrefix()
     .pipe gulp.dest cssDest
     .pipe cleanCss()
-    .pipe rename suffix: '.min.' + theDate
+    .pipe rename suffix: ".min.#{theDate}"
     .pipe gulp.dest cssDest
 
 # html
