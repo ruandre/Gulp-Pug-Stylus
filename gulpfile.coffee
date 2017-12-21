@@ -8,6 +8,7 @@ join = path.join
 srcDir  = join __dirname, 'src'
 destDir = join __dirname, 'dist'
 jsSrc   = join srcDir, 'js', 'bundle.js'
+jsDest  = join destDir, 'js'
 cssSrc  = join srcDir, 'styl', '*.styl'
 cssDest = join destDir, 'css'
 pugDir  = join srcDir, 'pug'
@@ -47,7 +48,7 @@ gulp.task 'js', ->
     .pipe resolveDeps()
     .pipe concat "bundle.min.#{theDate}.js"
     .pipe uglify()
-    .pipe gulp.dest destDir
+    .pipe gulp.dest jsDest
 
 # css
 # https://github.com/stevelacy/gulp-stylus
