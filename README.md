@@ -7,23 +7,19 @@ A neat little [Gulp](http://gulpjs.com) recipe for building static websites usin
 * Grab development dependencies:
 
 ```sh
-$ npm i  # if using NPM https://www.npmjs.com/
-$ yarn   # if using Yarn https://yarnpkg.com/
+$ npm i # if using NPM https://www.npmjs.com/
 ```
 
 * Grab client dependencies using [Bower](https://bower.io/):
 
 ```sh
-$ npm i -g bower         # if using NPM https://www.npmjs.com/
-$ yarn global add bower  # if using Yarn https://yarnpkg.com/
-
-$ bower install
+$ npm run bower
 ```
 
 * Kick off build:
 
 ```sh
-$ gulp  # compiles ./src files to ./dist
+$ npm run gulp # compiles ./src files to ./dist
 ```
 
 ## Features:

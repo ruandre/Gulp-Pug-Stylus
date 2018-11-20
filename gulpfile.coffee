@@ -22,11 +22,8 @@ theDate = moment().format 'YYYYMMDDHHmmss'
 
 # errors
 # https://github.com/floatdrop/gulp-plumber
-# https://github.com/gulpjs/gulp-util
 plumber = require 'gulp-plumber'
-util    = require 'gulp-util'
 plumberErr = (err) ->
-  util.beep()
   console.log err
 
 # clean
